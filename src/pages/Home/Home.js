@@ -16,7 +16,7 @@ const Home = () => {
           Test your inner typing pro with our website
         </p>
         <Link to="/type">
-          <Button text={"Let's Type"} />
+          <Button text={"Let's Type"} font={"white"} border={"white"} />
         </Link>
       </section>
       <Footer />
