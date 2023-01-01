@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Federant&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Imprima&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+.heading {
+  font-family: "Federant", cursive;
+}
+.fontType-2 {
+  font-family: "Imprima", sans-serif;
+}
+.hoverEffect:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: all 0.3s;
+}

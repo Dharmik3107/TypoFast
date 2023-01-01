@@ -1,21 +1,17 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Home from "./pages/Home";
-import Type from "./pages/Type";
-import NotFound from "./pages/NotFound";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home/Home";
+import Type from "./pages/Type/Type";
+import NotFound from "./pages/NotFound/NotFound";
 
 function App() {
   return (
     <Router>
-      <Header />
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/type" component={Type} />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/type" element={<Type />} />
         <Route component={NotFound} />
-      </Switch>
-      <Footer />
+      </Routes>
     </Router>
   );
 }
