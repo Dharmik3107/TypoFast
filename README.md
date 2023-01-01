@@ -1,4 +1,6 @@
-# Typing Speed Tester
+![Cover image](https://user-images.githubusercontent.com/49364985/210167354-731bdfa3-b2ca-4aeb-b5d9-d52cbbbdb186.png)
+
+# TypoFast
 
 A simple application that tests users' typing speed and displays the results in words per minute.
 
@@ -21,15 +23,11 @@ A simple application that tests users' typing speed and displays the results in 
 
 1. Clone the repository:
 
-
 2. Navigate to the root directory of the project:
-
 
 3. Install the dependencies:
 
-
 4. Start the application:
-
 
 5. The application will be served at http://localhost:3000/.
 
@@ -37,6 +35,4 @@ A simple application that tests users' typing speed and displays the results in 
 
 1. Navigate to the root directory of the project:
 
-
 2. Run the tests:
-
