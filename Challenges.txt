@@ -1,0 +1,9 @@
+1. Start the Timer when user start typing ==> Completed
+
+2. Clear the typed text in text area and set timer to 00:00 when user click Reset Button ==> Completed
+
+3. Stop the timer when user clicks on Stop Timer ==> Completed
+
+4. Calculate words/minute based on user typing speed
+
+5. Match the words of para with typed words
