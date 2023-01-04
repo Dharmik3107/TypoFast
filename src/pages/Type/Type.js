@@ -32,7 +32,7 @@ const Type = () => {
   }, [reset]);
 
   const handleTypedPara = (event) => {
-    setTypedPara(() => event.target.value);
+    if (!stop) setTypedPara(() => event.target.value);
   };
 
   const handleKeyDown = (event) => {

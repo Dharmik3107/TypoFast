@@ -3,9 +3,14 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Type from "./pages/Type/Type";
 import NotFound from "./pages/NotFound/NotFound";
-
+import { useMediaQuery } from "react-responsive";
+import NotaDesktop from "./pages/NotaDesktop/NotaDesktop";
 function App() {
-  return (
+  const isDesktopOrLaptop = useMediaQuery({
+    query: "(min-width: 1000px)",
+  });
+
+  return isDesktopOrLaptop ? (
     <Router>
       <Routes>
         <Route exact path="/" element={<Home />} />
@@ -13,6 +18,8 @@ function App() {
         <Route component={NotFound} />
       </Routes>
     </Router>
+  ) : (
+    <NotaDesktop />
   );
 }
 
