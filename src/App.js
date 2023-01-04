@@ -13,16 +13,8 @@ function App() {
   return isDesktopOrLaptop ? (
     <Router>
       <Routes>
-        <Route
-          exact
-          path="https://dharmik3107.github.io/typofast/"
-          element={<Home />}
-        />
-        <Route
-          exact
-          path="https://dharmik3107.github.io/typofast/type"
-          element={<Type />}
-        />
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/type" element={<Type />} />
         <Route component={NotFound} />
       </Routes>
     </Router>
