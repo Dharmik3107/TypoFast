@@ -9,6 +9,7 @@ import {
 } from "../../helper/result";
 
 const Type = () => {
+  //State management
   const [para, setPara] = useState("");
   const [typedPara, setTypedPara] = useState("");
   const [seconds, setSeconds] = useState(0);
@@ -19,6 +20,7 @@ const Type = () => {
   const aux = useRef([]);
   const timer = useRef(null);
 
+  //Persisted State
   useEffect(() => {
     const randomParaGenerator = () => {
       let paras = Object.values(ParaObj);
